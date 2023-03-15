@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  
+  background-color: azure;
+  font-family: 'Montserrat','sans-serif' ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +12,145 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bs1{box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
+
+h1{
+  font-size:30px;
+  font-weight:bold;
+  color:orangered;
+}
+
+.header{
+  padding:10px;
+}
+
+.content{
+  min-height:90vh;
+}
+.btn1{
+  box-shadow: none;
+  background-color: white;
+  color: orangered;
+  border:1px solid orangered ;
+}
+.car:hover{
+  height: 220px;
+  transition: 0.3s;
+}
+.car:hover .car-content{
+  transform: translateY(-20px);
+  opacity: 1;
+  transition: 0.7s;
+}
+.car{
+  margin-top: 100px;
+  /* background-color: rgb(18, 79, 194); */
+  height: 160px;
+  cursor: pointer;
+}
+.carimg{
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  transform: translateY(-40px);
+}
+.car-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-150px);
+  opacity: 0;
+}
+.spinner{
+      position:absolute;
+      top:50%;
+      left:50%;
+      z-index:1;
+}
+p{
+  margin:5px;
+  text-align:left;
+  padding:0;
+}
+
+/*login*/
+
+.login{
+  background-color: black;
+ 
+}
+.image_logo{
+  position: relative;
+}
+.image_logo h1{
+  position: absolute;
+  /* top: 60%; */
+  left: 40%;
+  bottom: 60%;
+  letter-spacing: 6px;
+  color: #212424;
+  animation: fadeInLeftBig 1s ease-in-out;
+}
+.image_login{
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+
+.col_style{
+  background-color: black;
+}
+.login_form{
+  background-color: #12100e;
+  margin-top: 100px;
+  border-radius: 10px;
+  animation: fadeInLeftBig 1s ease-in-out;
+}
+
+.login_form label,
+.login_form h1{
+  color: rgb(243, 243, 243) !important;
+  opacity: 0.8;
+  font-weight: bold;
+  width: 100%;
+}
+.login_form .btn_login{
+  outline: none;
+  border: none;
+  border: 1px solid #017e84;
+  background:transparent;
+  color: #fff;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  letter-spacing: 1.6px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.login_form .btn_login:hover{
+  animation: bounceIn .75s ease-in-out;
+  background-color: #017e84;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.form_descr {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.form_descr span{
+  color: #fff;
+}
+.form_descr p:last-child{
+  color: #017e84
+}
+.form_descr p:hover{
+  color: rgb(53, 15, 187);
 }
